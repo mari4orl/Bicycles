@@ -1,5 +1,4 @@
 body {
-  min-width: 320px;
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -31,38 +30,4 @@ body {
 img {
   max-width: 100%;
   height: auto;
-}
-
-.btn {
-  display: block;
-  position: relative;
-  width: 100%;
-  background-color: #FE7865;
-  padding: 30px 40px;
-  box-sizing: border-box;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  line-height: 15px;
-  text-decoration: none;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.btn:hover {
-  background-color: #F17D4B;
-}
-
-.btn:focus {
-  opacity: 0.5;
-}
-
-@media (max-width: 1023px) {
-  .btn {
-    padding: 19px 40px;
-    text-align: left;
-    font-size: 10px;
-    font-weight: 500;
-    line-height: 12px;
-  }
 }
