@@ -1,0 +1,165 @@
+.page-header {
+  background-color: #171616;
+  background-image: url("../img/promo-desk@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 280px;
+  padding-right: 280px;
+  padding-bottom: 240px;
+  padding-top: 21px;
+  width: 1440px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .page-header {
+    background-image: url("../img/promo-desk@2x.jpg");
+  }
+}
+
+.page-header__heading {
+  width: 390px;
+  color: #ffffff;
+  margin-right: 160px;
+}
+
+.page-header__title {
+  margin-top: 31px;
+  margin-bottom: 24px;
+
+  font-size: 46px;
+  line-height: 64px;
+}
+
+.page-header__description {
+  opacity: 0.8;
+  margin: 0;
+  line-height: 32px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.page-header__form-wrapper {
+  width: 327px;
+}
+
+.page-header__text {
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: -0.005em;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 4px;
+}
+
+.page-header__form input, .page-header__btn {
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 15px;
+  padding-left: 29px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #C9CCD4;
+  box-sizing: border-box;
+}
+
+.page-header__form input::placeholder {
+  font-family: "Open Sans";
+  font-size: 15px;
+  line-height: 24px;
+  color: #1C1C1C;
+  opacity: 0.5;
+}
+
+.page-header__btn {
+  background: #0AD9C6;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 15px;
+  padding-left: 47px;
+  padding-right: 48px;
+  border: none;
+  text-align: center;
+}
+
+@media (max-width: 1023px) {
+  .page-header {
+    background-image: url("../img/promo-tab@1x.jpg");
+    width: 767px;
+    padding: 0;
+    background-color: #ffffff;
+  }
+
+  .page-header__heading {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 150px;
+  }
+
+  .page-header__logo {
+    margin-top: 25px;
+    margin-left: 21px;
+    display: block;
+  }
+
+  .page-header__title {
+    font-size: 30px;
+    line-height: 42px;
+    margin-top: 88px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .page-header__description {
+    text-align: center;
+    font-size: 18px;
+    line-height: 32px;
+    width: 435px;
+    margin: 0 auto;
+  }
+
+  .page-header__form-wrapper {
+    margin: 0 auto;
+    width: 321px;
+  }
+
+  .page-header__text {
+    color: #000000;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-header {
+    background-image: url("../img/promo-mob@1x.jpg");
+    width: 320px;
+    padding: 0;
+    background-color: #ffffff;
+  }
+
+  .page-header__heading {
+    margin-bottom: 140px;
+  }
+
+  .page-header__logo {
+    margin-left: 16px;
+  }
+
+  .page-header__title {
+    margin-top: 74px;
+  }
+
+  .page-header__description {
+    width: 288px;
+  }
+}
