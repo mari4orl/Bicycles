@@ -3,6 +3,11 @@
   width: 100%;
   margin-bottom: 256px;
 }
+
+.navigation__toggle {
+  display: none;
+}
+
 .navigation__list {
   padding: 0;
   padding-left: 10px;
@@ -29,6 +34,122 @@
 
 @media (max-width: 1023px) {
   .navigation {
+    position: relative;
+    margin: 0;
+  }
+
+  .navigation__list {
     display: none;
+    margin: 0;
+  }
+
+  .navigation__toggle {
+    display: block;
+    position: absolute;
+    right: 0;
+
+    width: 50px;
+    height: 50px;
+    padding: 0;
+
+    background-color: #0AD9C6;
+    outline: none;
+
+    cursor: pointer;
+    border: none;
+  }
+
+  .navigation--closed .navigation__toggle::before {
+    content: "";
+
+    position: absolute;
+    top: 17px;
+    right: 15px;
+
+    width: 22px;
+    height: 1px;
+
+    background-color: #000000;
+    box-shadow: 0 5px 0 0 #000000, 0 11px 0 0 #000000;
+  }
+
+  .navigation--opened .navigation__toggle {
+    background-color: #ffffff;
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      right: 50%;
+      margin-right: -15px;
+
+      width: 31px;
+      height: 1px;
+
+      background-color: #d0d0d1;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .navigation--opened {
+    background-color: #ffffff;
+    right: 0;
+  }
+
+  .navigation--nojs, .navigation--opened {
+    width: 320px;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    margin: 0;
+    background-color: #ffffff;
+    box-shadow: 8px 9px 24px -5px rgba(0,0,0,0.75);
+  }
+
+  .navigation--nojs .navigation__toggle {
+    display: none;
+  }
+
+  .navigation--opened .navigation__toggle {
+    right: 0;
+  }
+
+  .navigation--nojs .navigation__list, .navigation--opened .navigation__list {
+    display: block;
+    width: 320px;
+    padding: 0;
+    padding-top: 50px;
+    margin: 0;
+  }
+
+  .navigation--nojs .navigation__item, .navigation--opened .navigation__item {
+    background-color: #FBF8F8;
+    padding: 15px 0;
+    padding-left: 16px;
+    margin-bottom: 30px;
+  }
+
+  .navigation__link {
+    color: #48494D;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: normal;
+    opacity: 1;
+  }
+
+  .navigation__link::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/arrow down.svg");
+    width: 25px;
+    height: 25px;
+    right: 16px;
   }
 }

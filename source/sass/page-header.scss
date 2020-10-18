@@ -8,11 +8,13 @@
   flex-wrap: wrap;
   padding-left: 280px;
   padding-right: 280px;
-  padding-bottom: 240px;
+  padding-bottom: 235px;
   padding-top: 21px;
   width: 1440px;
   box-sizing: border-box;
   margin: 0 auto;
+
+  position: relative;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {

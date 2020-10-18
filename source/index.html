@@ -11,7 +11,12 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="page-header__navigation navigation">
+      <nav class="page-header__navigation navigation navigation--closed navigation--nojs">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
+        </button>
         <ul class="navigation__list">
           <li class="navigation__item">
             <a href="#about-us" class="navigation__link">О нас</a>
@@ -127,5 +132,7 @@
         </div>
       </section>
     </main>
+
+    <script src="js/navigation.js"></script>
   </body>
 </html>
