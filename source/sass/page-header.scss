@@ -3,24 +3,25 @@
   background-image: url("../img/promo-desk@1x.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
-
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 280px;
-  padding-right: 280px;
-  padding-bottom: 235px;
-  padding-top: 21px;
-  width: 1440px;
-  box-sizing: border-box;
+  background-size: cover;
   margin: 0 auto;
-
-  position: relative;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .page-header {
     background-image: url("../img/promo-desk@2x.jpg");
   }
+}
+
+.page-header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 235px;
+  padding-top: 21px;
+  width: 880px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
 }
 
 .page-header__heading {
@@ -95,9 +96,14 @@
 @media (max-width: 1023px) {
   .page-header {
     background-image: url("../img/promo-tab@1x.jpg");
+    background-color: #ffffff;
+    background-size: auto;
+  }
+
+  .page-header__inner {
     width: 767px;
     padding: 0;
-    background-color: #ffffff;
+
   }
 
   .page-header__heading {
@@ -144,9 +150,13 @@
 @media (max-width: 767px) {
   .page-header {
     background-image: url("../img/promo-mob@1x.jpg");
+    background-color: #ffffff;
+  }
+
+  .page-header__inner {
     width: 320px;
     padding: 0;
-    background-color: #ffffff;
+
   }
 
   .page-header__heading {
@@ -163,5 +173,15 @@
 
   .page-header__description {
     width: 288px;
+  }
+
+  .page-header__form-wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .page-header__btn {
+    padding-left: 28px;
+    padding-right: 28px;
   }
 }
