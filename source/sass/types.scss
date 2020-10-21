@@ -21,8 +21,7 @@
   padding: 0;
   list-style: none;
   display: flex;
-  max-width: 1126px;
-  justify-content: space-between;
+  max-width: 1222px;
 }
 
 .types__item {
@@ -30,7 +29,16 @@
   z-index: 1;
 }
 
+.types__item--first {
+  margin-left: 60px;
+  margin-right: 50px;
+  // margin-left: 4.9%;
+  // margin-right: 4.09%;
+}
+
 .types__item--middle {
+  // margin-right: 50px;
+  margin-right: 4.09%;
   margin-top: 29px;
 }
 

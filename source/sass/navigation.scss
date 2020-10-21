@@ -1,6 +1,6 @@
 .navigation {
   margin: 0 auto;
-  width: 100%;
+  width: 873px;
   margin-bottom: 256px;
 }
 
@@ -10,8 +10,8 @@
 
 .navigation__list {
   padding: 0;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
   list-style: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -30,6 +30,14 @@
   text-decoration: none;
   font-weight: 300;
   line-height: 32px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -63,14 +71,14 @@
     content: "";
 
     position: absolute;
-    top: 17px;
-    right: 15px;
+    top: 18px;
+    right: 14px;
 
     width: 22px;
     height: 1px;
 
     background-color: #000000;
-    box-shadow: 0 5px 0 0 #000000, 0 11px 0 0 #000000;
+    box-shadow: 0 7px 0 0 #000000, 0 13px 0 0 #000000;
   }
 
   .navigation--opened .navigation__toggle {
