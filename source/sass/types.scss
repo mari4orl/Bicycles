@@ -113,7 +113,7 @@
 @media (max-width: 1023px) {
   .types {
     padding-top: 50px;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
   }
 
   .types__title {
@@ -129,7 +129,8 @@
 
     margin: 0 auto;
     flex-wrap: wrap;
-    max-width: 768px;
+    width: 768px;
+    box-sizing: border-box;
     justify-content: space-around;
   }
 
@@ -168,7 +169,7 @@
 
 @media (max-width: 767px) {
   .types {
-    padding-bottom: 54px;
+    padding-bottom: 24px;
   }
 
   .types__list {
