@@ -18,28 +18,33 @@
 
 .contacts__text {
   width: 555px;
+  margin: 0;
+  margin-bottom: 41px;
+  margin-left: 30.2%;
+  margin-right: 31.25%;
+
   font-size: 17px;
   line-height: 31px;
   text-align: center;
-  margin: 0;
-  margin-bottom: 41px;
-
   color: rgba(0, 0, 0, 0.7);
 }
 
 iframe {
   width: 957px;
   height: 530px;
-  margin-bottom: 39px;
+  margin-bottom: 37px;
 }
 
 .contacts__contacts {
   display: flex;
+  margin-left: 33.27%;
+  margin-right: 30.83%;
+  width: 517px;
 }
 
 .contacts__mail,
 .contacts__tel  {
-  margin-right: 127px;
+  margin-right: 24.56%;
   position: relative;
   line-height: 22px;
   color: rgba(0, 0, 0, 0.5);
@@ -68,7 +73,7 @@ iframe {
   background-repeat: no-repeat;
   position: absolute;
   left: -41px;
-  top: 5px;
+  top: 3px;
 }
 
 .contacts__tel::before {
@@ -76,7 +81,7 @@ iframe {
   width: 22px;
   height: 24px;
   top: 0;
-  left: -30px;
+  left: -35px;
 }
 
 @media (max-width: 1023px) {
@@ -91,6 +96,7 @@ iframe {
   }
 
   .contacts__text {
+    margin: 0;
     width: 100%;
     margin-bottom: 20px;
   }
@@ -98,7 +104,12 @@ iframe {
   iframe {
     width: 90.88%;
     height: 545px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+  }
+
+  .contacts__contacts {
+    margin-left: 19%;
+    margin-right: 13.67%;
   }
 }
 
@@ -121,10 +132,18 @@ iframe {
   .contacts__contacts {
     flex-direction: column;
     align-items: center;
+    width: 227px;
+    margin-left: 22.5%;
+    margin-right: 6.56%;
+    box-sizing: border-box;
   }
 
   .contacts__mail {
     margin: 0;
-    margin-bottom: 22px;
+    margin-bottom: 23px;
+  }
+
+  .contacts__tel {
+    margin-right: 23px;
   }
 }

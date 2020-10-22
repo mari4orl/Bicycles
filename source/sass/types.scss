@@ -1,7 +1,7 @@
 .types {
   background-color: #F6F7F9;
   padding-top: 150px;
-  padding-bottom: 147px;
+  padding-bottom: 148px;
   text-align: center;
 }
 
@@ -17,11 +17,13 @@
 }
 
 .types__list {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
-  max-width: 1222px;
+  max-width: 1126px;
+  margin-left: 11.73%;
+  margin-right: 10.07%;
 }
 
 .types__item {
@@ -30,22 +32,20 @@
 }
 
 .types__item--first {
-  margin-left: 60px;
-  margin-right: 50px;
-  // margin-left: 4.9%;
-  // margin-right: 4.09%;
+  margin-top: 10px;
+  margin-right: 4.44%;
 }
 
 .types__item--middle {
-  // margin-right: 50px;
-  margin-right: 4.09%;
-  margin-top: 29px;
+  margin-right: 4.44%;
+
+  margin-top: 39px;
 }
 
 .types__item--first::before {
   content: "";
   position: absolute;
-  left: -90px;
+  left: -60px;
   top: 156px;
   z-index: -1;
 
@@ -68,8 +68,8 @@
 }
 
 .types__item--middle::before {
-  top: -23px;
-  left: -23px;
+  top: -20px;
+  left: -20px;
 }
 
 .types__item--middle::after {
@@ -81,8 +81,8 @@
 .types__item--last::before {
   content: "";
   position: absolute;
-  right: -42px;
-  top: -42px;
+  right: -35px;
+  top: -33px;
 
   width: 95px;
   height: 95px;
@@ -121,18 +121,23 @@
     padding-left: 64px;
     padding-right: 64px;
 
+    margin: 0 auto;
     flex-wrap: wrap;
     max-width: 768px;
     justify-content: space-around;
   }
 
+  .types__item--first {
+    margin: 0;
+  }
+
   .types__item--middle {
-    margin-top: 0;
+    margin: 0;
     margin-bottom: 50px;
   }
 
   .types__item--first::before {
-    left: -43px;
+    left: -38px;
     top: 201px;
 
     width: 127px;
@@ -146,8 +151,8 @@
   }
 
   .types__item--last::before {
-    right: -21px;
-    top: -21px;
+    right: -24px;
+    top: -20px;
 
     width: 68px;
     height: 68px;
@@ -157,7 +162,7 @@
 
 @media (max-width: 767px) {
   .types {
-    padding-bottom: 52px;
+    padding-bottom: 54px;
   }
 
   .types__list {
@@ -167,11 +172,16 @@
     max-width: 320px;
   }
 
-  .types__item--first {
-    margin-bottom: 40px;
+  .types__item--first,
+  .types__item--middle  {
+    margin-bottom: 42px;
   }
 
-  .types__item--middle {
-    margin-bottom: 40px;
+  .types__item--first::before {
+    left: -25px;
+  }
+
+  .types__item--last::before {
+    right: -15px;
   }
 }
