@@ -1,7 +1,7 @@
 .types {
   background-color: #F6F7F9;
   padding-top: 150px;
-  padding-bottom: 148px;
+  padding-bottom: 118px;
   text-align: center;
 }
 
@@ -17,29 +17,35 @@
 }
 
 .types__list {
-  margin: 0;
-  padding: 0;
   list-style: none;
-  display: flex;
-  max-width: 1126px;
+  margin: 0;
   margin-left: 11.73%;
   margin-right: 10.07%;
+  padding: 0;
+  width: 78.2%;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .types__item {
   position: relative;
   z-index: 1;
+  margin-bottom: 30px;
+  margin-right: 4.44%;
 }
 
 .types__item--first {
   margin-top: 10px;
-  margin-right: 4.44%;
 }
 
 .types__item--middle {
-  margin-right: 4.44%;
-
   margin-top: 39px;
+}
+
+.types__item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .types__item--first::before {

@@ -3,7 +3,7 @@
   box-sizing: border-box;
   text-align: center;
   margin-top: 150px;
-  padding-bottom: 153px;
+  padding-bottom: 143px;
 }
 
 .about-us__title {
@@ -24,11 +24,13 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
   list-style: none;
 }
 
 .about-us__item {
   margin-right: 38px;
+  margin-bottom: 10px;
   width: 263px;
 }
 

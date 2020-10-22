@@ -17,7 +17,6 @@
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 240px;
-  padding-top: 21px;
   width: 880px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -106,23 +105,27 @@
 
   &:hover {
     opacity: 0.7;
+    border: none;
   }
 
   &:focus {
     opacity: 0.5;
+    border: none;
   }
 }
 
 @media (max-width: 1023px) {
   .page-header {
-    background-image: url("../img/promo-tab@1x.jpg");
     background-color: #ffffff;
-    background-size: auto;
+    background-image: none;
   }
 
   .page-header__inner {
     width: 767px;
     padding: 0;
+    background-image: url("../img/promo-tab@1x.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
   }
 
   .page-header__heading {
@@ -171,14 +174,11 @@
 }
 
 @media (max-width: 767px) {
-  .page-header {
-    background-image: url("../img/promo-mob@1x.jpg");
-    background-color: #ffffff;
-  }
-
   .page-header__inner {
     width: 320px;
     padding: 0;
+    background-image: url("../img/promo-mob@1x.jpg");
+
   }
 
   .page-header__heading {
