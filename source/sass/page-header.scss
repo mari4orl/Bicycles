@@ -61,43 +61,47 @@
   margin-top: 4px;
 }
 
-.page-header__form input, .page-header__btn {
+.page-header__form input,
+.page-header__btn {
   width: 100%;
-  padding-top: 17px;
-  padding-bottom: 14px;
+  padding-top: 13px;
+  padding-bottom: 10px;
   padding-left: 29px;
   margin-bottom: 20px;
   border-radius: 6px;
-  border: 1px solid #C9CCD4;
+  border: 1px solid #c9ccd4;
   box-sizing: border-box;
 
   &:hover {
-    border: 1px solid #0AD9C6;
+    border: 1px solid #0ad9c6;
   }
 
   &:focus {
     outline: none;
-    border: 1px solid #0AD9C6;
+    border: 1px solid #0ad9c6;
   }
 }
 
 .page-header__form input::placeholder {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 24px;
-  color: #1C1C1C;
+  color: #1c1c1c;
   opacity: 0.5;
+
+  min-height: 100%;
 }
 
 .page-header__btn {
-  background: #0AD9C6;
-  font-family: "Open Sans";
+  background: #0ad9c6;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 600;
   text-align: center;
 
   margin: 0;
   padding-top: 15px;
+  padding-bottom: 14px;
   padding-left: 47px;
   padding-right: 48px;
   border: none;
@@ -121,10 +125,10 @@
   }
 
   .page-header__inner {
-    width: 767px;
+    width: 100%;
     padding: 0;
     background-image: url("../img/promo-tab@1x.jpg");
-    background-size: auto;
+    background-size: contain;
     background-repeat: no-repeat;
   }
 
@@ -153,16 +157,18 @@
     font-size: 18px;
     line-height: 32px;
     width: 435px;
+
     margin: 0 auto;
   }
 
   .page-header__form-wrapper {
     margin: 0 auto;
-    width: 321px;
+    width: 41.8%;
   }
 
   .page-header__form input {
     padding-left: 20px;
+    padding-bottom: 11px;
   }
 
   .page-header__text {
@@ -175,10 +181,9 @@
 
 @media (max-width: 767px) {
   .page-header__inner {
-    width: 320px;
     padding: 0;
     background-image: url("../img/promo-mob@1x.jpg");
-
+    background-size: 100% 390px;
   }
 
   .page-header__heading {
@@ -200,6 +205,7 @@
   .page-header__form-wrapper {
     padding-left: 16px;
     padding-right: 16px;
+    width: 90%;
   }
 
   .page-header__text {

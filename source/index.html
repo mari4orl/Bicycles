@@ -5,8 +5,8 @@
     <title>Велосипеды</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
+    <script src="js/picturefill.min.js"></script>
     <link rel="preload" href="/fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body>
@@ -46,7 +46,7 @@
           <p class="page-header__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
           <form class="page-header__form" action="https://echo.htmlacademy.ru" method="post">
             <input type="text" name="name" placeholder="Введите Ваше Имя" required>
-            <input type="tel" name="tel" placeholder="Введите Ваш номер телефона" min="12" max="13" required>
+            <input type="tel" id="phone" name="tel" placeholder="Введите Ваш номер телефона" required>
             <button type="submit" class="page-header__btn">Подобрать велосипед мечты</button>
           </form>
         </div>
@@ -61,11 +61,11 @@
             <h3 class="about-us__number">01</h3>
             <p class="about-us__text">Самый широкий выбор велосипедов!</p>
           </li>
-          <li class="about-us__item">
+          <li class="about-us__item about-us__item--second">
             <h3 class="about-us__number about-us__number--second">02</h3>
             <p class="about-us__text">Доставка велосипедов по всей России!</p>
           </li>
-          <li class="about-us__item">
+          <li class="about-us__item about-us__item--third">
             <h3 class="about-us__number about-us__number--third">03</h3>
             <p class="about-us__text">Большой выбор крутых аксессуаров!</p>
           </li>
@@ -138,5 +138,15 @@
     </main>
 
     <script src="js/navigation.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+    <script src="/js/jquery.maskedinput.min.js"></script>
+    <script>
+      $(function(){
+        $("#phone").mask("8(999) 999-9999");
+      });
+    </script>
   </body>
 </html>

@@ -44,7 +44,7 @@
 }
 
 .contacts__mail,
-.contacts__tel  {
+.contacts__tel {
   margin-right: 24.56%;
   margin-bottom: 10px;
   position: relative;
@@ -71,7 +71,7 @@
   display: block;
   width: 26px;
   height: 20px;
-  background-image: url(../img/mail.svg);
+  background-image: url("../img/mail.svg");
   background-repeat: no-repeat;
   position: absolute;
   left: -41px;
@@ -79,7 +79,7 @@
 }
 
 .contacts__tel::before {
-  background-image: url(../img/phone.svg);
+  background-image: url("../img/phone.svg");
   width: 22px;
   height: 24px;
   top: 0;
